@@ -1,4 +1,3 @@
-// src/App.js
 import React, { useState } from 'react';
 import SearchBar from './components/SearchBar';
 import ClientList from './components/ClientList';
@@ -16,7 +15,7 @@ const App = () => {
       const clientsData = await fetchClients(dobStart, dobEnd);
       setClients(clientsData);
     } catch (error) {
-      // Trate o erro conforme necessário
+      
     }
   };
 
@@ -25,7 +24,7 @@ const App = () => {
   };
 
   const handleClientDelete = (clientId) => {
-    // Simule a exclusão, removendo o cliente da lista
+    
     const updatedClients = clients.filter(client => client.id !== clientId);
     setClients(updatedClients);
   };
@@ -35,7 +34,7 @@ const App = () => {
   };
 
   const handlePdfView = () => {
-    // Abra o PDF em uma nova guia
+    
     window.open('https://static.snxpay.com/pdf/Fatura%20Elevaty.pdf', '_blank');
   };
 

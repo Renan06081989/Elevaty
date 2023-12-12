@@ -12,12 +12,12 @@ const ClientDetails = ({ client, onPdfView, onClose,}) => {
         setCreditCards(cards);
       } catch (error) {
         console.error('Erro ao carregar os cartões de crédito:', error);
-        // Trate o erro conforme necessário
+        
       }
     };
 
     loadCreditCards();
-  }, []); // Não há necessidade de depender do client.id aqui
+  }, []); 
 
   console.log('Dados dos cartões de crédito recebidos:', creditCards);
 
@@ -30,7 +30,7 @@ const ClientDetails = ({ client, onPdfView, onClose,}) => {
       <p>Data de Nascimento: {client.birthday}</p>
       <p>Telefone: {client.phone}</p>
 
-      {/* Informações de Endereço */}
+      {}
       <div>
         <h3>Endereço</h3>
         <p>Rua: {client.address.street}</p>
@@ -40,7 +40,7 @@ const ClientDetails = ({ client, onPdfView, onClose,}) => {
         <p>País: {client.address.country}</p>
       </div>
 
-      {/* Informações de Cartões de Crédito */}
+      {}
       {creditCards && creditCards.length > 0 && (
         <div>
           <h3>Cartões de Crédito</h3>

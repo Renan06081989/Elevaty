@@ -1,4 +1,3 @@
-// src/services/api.js
 const API_URL = 'https://fakerapi.it/api/v1';
 
 export const fetchClients = async (dobStart, dobEnd) => {
@@ -13,7 +12,7 @@ export const fetchClients = async (dobStart, dobEnd) => {
 };
 
 
-// src/services/api.js
+
 export const fetchCreditCards = async () => {
   try {
     const response = await fetch('https://fakerapi.it/api/v1/credit_cards?_quantity=1');
